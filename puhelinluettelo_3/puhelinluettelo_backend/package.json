@@ -6,7 +6,8 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ../frontend && npm run build && @powershell Copy-Item dist -Recurse ../backend",
+    "build": "@powershell Write-Output 'moikka bäkistä :('",
+    "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ../puhelinluettelo_frontend && npm run build && @powershell Copy-Item dist -Recurse ../puhelinluettelo_backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Viivi-Maari Kallinen",
